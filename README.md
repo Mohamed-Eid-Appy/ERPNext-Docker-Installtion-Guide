@@ -81,7 +81,10 @@ bench start
     - click `complete setup`
 ## Congratulations! Now You have your erpnext on Docker
 
+- ----------------------------------------------------
+
 # Steps To Install zatca Customization app:
+
 
 ## Confiigure Git with your company GitHub account via SSH
 
@@ -90,25 +93,49 @@ bench start
 ```shell
 source frappe-bench/env/bin/activate
 ```
+![image](https://github.com/Mohamed-Eid-Appy/ERPNext-Docker-Installtion-Guide/assets/170640563/56a7f21e-276b-4ee6-8032-713183b8e3f9)
+
 - run this command to create the ssh key:
 ```shell
 ssh-keygen -t rsa -b 4096 -C "MyEmail@appyinnovator.com" #change MyEmail@appyinnovator.com with your company github email
 ```
+
 press enter, enter, enter
+![image](https://github.com/Mohamed-Eid-Appy/ERPNext-Docker-Installtion-Guide/assets/170640563/36bd8684-8776-4885-a1e1-092e20f266d0)
 
 - Add SSH Key to SSH Agent:
   - Start the SSH agent in the background:
   ```shell
   eval "$(ssh-agent -s)"
   ```
-  -Add your SSH private key to the SSH agent:
+  - Add your SSH private key to the SSH agent:
   ```shell
   ssh-add ~/.ssh/id_rsa
   ```
+  ![image](https://github.com/Mohamed-Eid-Appy/ERPNext-Docker-Installtion-Guide/assets/170640563/8864eca1-ce07-4e73-8b75-640a5e0d49e6)
+
 - Add SSH Key to GitHub Account:
-  -Copy the SSH key to your clipboard:
+  - Copy the SSH key to your clipboard:
   ```shell
   cat ~/.ssh/id_rsa.pub
   ```
-   copt  the result of previous command
-  - Go to GitHub > Settings > SSH and GPG keys > New SSH key, and paste the key.
+   copy  the result of previous command (Like the selected in the image below)
+  ![image](https://github.com/Mohamed-Eid-Appy/ERPNext-Docker-Installtion-Guide/assets/170640563/34f9b3dc-a165-43b4-ae03-712acbce2a5e)
+
+  - Go to GitHub > Settings > SSH and GPG keys > New SSH key, and paste the key and give it a name and click Add ssh Key.
+    ![image](https://github.com/Mohamed-Eid-Appy/ERPNext-Docker-Installtion-Guide/assets/170640563/78ea444f-b5f6-405b-ae1f-fe0faf906c9a)
+  - Go back to terminal and make sure you're authenticated:
+    run the command:
+    ```shell
+    ssh -T git@github.com
+    ```
+    you should see a welcome message like this:
+    ![image](https://github.com/Mohamed-Eid-Appy/ERPNext-Docker-Installtion-Guide/assets/170640563/efb8016f-1e16-4300-8029-a0fc903bef6a)
+    #### congraulations Your Git is now connected to tour company Github Account!
+
+### Step 2: install zatca app on your bench:
+- run the command:
+  ```shell
+  bench get-app git@github.com:readerorg/ERPNext-Zatca.git
+  ```
+  ![image](https://github.com/Mohamed-Eid-Appy/ERPNext-Docker-Installtion-Guide/assets/170640563/a2155dd8-96c7-4355-8ffd-8732dd337dca)
