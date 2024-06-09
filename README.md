@@ -1,13 +1,14 @@
-# ERPNext-Docker-Installtion-Guide
-A Guide for Installing Frappe &amp; erpNext on Docker
+# ERPNext ON Docker Installtion Guide
+
+Proven Step by Step Guide for ERPNext Installation on Docker
 
 ## Prequsites:
 - docker
 - vscode
-- docker-compose
-- user added to docker group
 - Install Dev Containers for VSCode 
-- wsl (windows subsystem for linux)
+- wsl (windows subsystem for linux)  
+- docker-compose (for Linux/mac)
+- user added to docker group (for Linux/mac)
 
 ## Steps:
 
