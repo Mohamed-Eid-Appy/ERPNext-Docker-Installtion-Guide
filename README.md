@@ -12,7 +12,7 @@ A Guide for Installing Frappe &amp; erpNext on Docker
 ## Steps:
 
 ### Step 1: Clone and change directory to frappe_docker directory
-
+Use commands: 
 ```shell
 git clone https://github.com/frappe/frappe_docker.git zatca-dev
 cd zatca-dev
