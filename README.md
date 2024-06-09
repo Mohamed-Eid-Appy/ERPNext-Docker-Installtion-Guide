@@ -80,3 +80,35 @@ bench start
     - company name : `Appy Innovate`
     - click `complete setup`
 ## Congratulations! Now You have your erpnext on Docker
+
+# Steps To Install zatca Customization app:
+
+## Confiigure Git with your company GitHub account via SSH
+
+### Step 1: Make SSH Key:
+- Use bech virtual env:
+```shell
+source frappe-bench/env/bin/activate
+```
+- run this command to create the ssh key:
+```shell
+ssh-keygen -t rsa -b 4096 -C "MyEmail@appyinnovator.com" #change MyEmail@appyinnovator.com with your company github email
+```
+press enter, enter, enter
+
+- Add SSH Key to SSH Agent:
+  - Start the SSH agent in the background:
+  ```shell
+  eval "$(ssh-agent -s)"
+  ```
+  -Add your SSH private key to the SSH agent:
+  ```shell
+  ssh-add ~/.ssh/id_rsa
+  ```
+- Add SSH Key to GitHub Account:
+  -Copy the SSH key to your clipboard:
+  ```shell
+  cat ~/.ssh/id_rsa.pub
+  ```
+   copt  the result of previous command
+  - Go to GitHub > Settings > SSH and GPG keys > New SSH key, and paste the key.
