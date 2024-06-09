@@ -45,7 +45,7 @@ code .
 #### expect to see the container in vscode like the following:
 ![image](imgs/first_container.png)
 
-### step 6: Make sure files `installer.py` and `apps-examp;e.json` are set to LF Not CRLF
+### step 6: Make sure files `installer.py` and `apps-example.json` are set to LF Not CRLF
 ![image](imgs/LF.png)
 - 1 open the file
 - 2 click on `CRLF`below 
