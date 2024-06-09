@@ -134,8 +134,41 @@ press enter, enter, enter
     #### congraulations Your Git is now connected to tour company Github Account!
 
 ### Step 2: install zatca app on your bench:
-- run the command:
+- Install zatca app in your bench by running the command:
   ```shell
   bench get-app git@github.com:readerorg/ERPNext-Zatca.git
   ```
   ![image](https://github.com/Mohamed-Eid-Appy/ERPNext-Docker-Installtion-Guide/assets/170640563/a2155dd8-96c7-4355-8ffd-8732dd337dca)
+
+- make sure your remote branch name is ```origin```:
+  ```shell
+  git remote -v
+  ```
+  -   if its name is ```upstream``` not ```origin`` run the command:
+     ```shell
+     git remote rename upstream origin
+     ```
+- If you don't have your branch yet, make your branch and switch to it:
+  ```shell
+  git checkout -b Mohamed-Eid # replace Mohamed-Eid with your branch name
+  ```
+  ![image](https://github.com/Mohamed-Eid-Appy/ERPNext-Docker-Installtion-Guide/assets/170640563/0e7370a4-4a64-4b45-a688-379fab983c5f)
+  Push your new-branch to Github:
+  ```shell
+  git push -u origin Mohamed-Eid  # reolace Mohamed Eid with  your recently created branch name
+  ```
+  ![image](https://github.com/Mohamed-Eid-Appy/ERPNext-Docker-Installtion-Guide/assets/170640563/c973dac3-5767-4f93-8392-901b28ebc799)
+
+- If You have a branch already, Just switch to it
+
+### Step 3: Make Sure Developer Mode is Enabled:
+- open the frappe-bench directory in trrminal
+- run the command:
+  ```shell
+  bench set-config developer_mode 1
+  ```
+
+### Step 4: Make Your Edits and open ```frappe-bench/apps/zatca``` in terminal and push them to github
+
+
+# Congratulations We're done!
