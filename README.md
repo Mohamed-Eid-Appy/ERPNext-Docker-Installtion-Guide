@@ -3,16 +3,18 @@
 Proven Step by Step Guide for ERPNext Installation on Docker
 
 ## Prequsites:
+- wsl (windows subsystem for linux)  
 - docker
 - vscode
-- Install Dev Containers for VSCode 
-- wsl (windows subsystem for linux)  
+- Install Dev Containers extension in VSCode
+- 
 - docker-compose (for Linux/mac)
 - user added to docker group (for Linux/mac)
 
 ## Steps:
 
 ### Step 1: Clone and change directory to frappe_docker directory
+open the directory you want to download files into and
 Use commands: 
 ```shell
 git clone https://github.com/frappe/frappe_docker.git zatca-dev
