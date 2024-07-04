@@ -7,7 +7,6 @@ Proven Step by Step Guide for ERPNext Installation on Docker
 - docker
 - vscode
 - Install Dev Containers extension in VSCode
-- 
 - docker-compose (for Linux/mac)
 - user added to docker group (for Linux/mac)
 
