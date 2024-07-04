@@ -125,7 +125,7 @@ press enter, enter, enter
   ![image](https://github.com/Mohamed-Eid-Appy/ERPNext-Docker-Installtion-Guide/assets/170640563/34f9b3dc-a165-43b4-ae03-712acbce2a5e)
 
   - Go to GitHub > Settings > SSH and GPG keys > New SSH key, and paste the key and give it a name and click Add ssh Key.
-    ![image](https://github.com/Mohamed-Eid-Appy/ERPNext-Docker-Installtion-Guide/assets/170640563/78ea444f-b5f6-405b-ae1f-fe0faf906c9a)
+    ![image](https://github.com/Mohamed-Eid-Appy/ERPNext-Docker-Installtion-Guide/assets/170640563/ce24daa7-54cf-4d5f-97b4-ffcf98607835)
   - Go back to terminal and make sure you're authenticated:
     run the command:
     ```shell
